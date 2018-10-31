@@ -87,7 +87,7 @@ for santa in santas:
                 errorHappened = True
                 break
     santa.santee = headers[selected]
-#    print(santa.name+" - "+santa.santee)
+#    print(santa.name+" - "+santa.santee) #prints list for debugging purposes
 
 #Send out emails to all Secret Santas
 email = input('Enter your email address: ')
@@ -99,5 +99,6 @@ if not errorHappened:
     s.login(email, password)
     for santa in santas:
         break
+#        remove comment on next line to enable emails
 #        s.sendmail('rpulliam@gmail.com', santa.email, 'Subject: Secret Santa\nDear '+santa.name+', you are Santa this year for '+santa.santee+'. Shhh...its a secret')
     s.quit()

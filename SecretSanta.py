@@ -100,5 +100,5 @@ if not errorHappened:
     for santa in santas:
         break
 #        remove comment on next line to enable emails
-#        s.sendmail('rpulliam@gmail.com', santa.email, 'Subject: Secret Santa\nDear '+santa.name+', you are Santa this year for '+santa.santee+'. Shhh...its a secret')
+#        s.sendmail(email, santa.email, 'Subject: Secret Santa\nDear '+santa.name+', you are Santa this year for '+santa.santee+'. Shhh...its a secret')
     s.quit()

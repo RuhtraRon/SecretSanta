@@ -98,7 +98,6 @@ if not errorHappened:
     s.starttls()
     s.login(email, password)
     for santa in santas:
-        break
 #        remove comment on next line to enable emails
 #        s.sendmail(email, santa.email, 'Subject: Secret Santa\nDear '+santa.name+', you are Santa this year for '+santa.santee+'. Shhh...its a secret')
     s.quit()
